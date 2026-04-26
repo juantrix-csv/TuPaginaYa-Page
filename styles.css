@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #f8fbff;
@@ -108,11 +109,20 @@ a {
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
   align-items: center;
   gap: clamp(28px, 6vw, 80px);
-  min-height: calc(100vh - 86px);
+  min-height: min(760px, calc(100vh - 86px));
   padding: clamp(44px, 8vw, 92px) clamp(18px, 5vw, 72px) 56px;
   background:
     radial-gradient(circle at 86% 18%, rgba(7, 134, 242, 0.14), transparent 28%),
     linear-gradient(135deg, #ffffff 0%, #f2fbff 48%, #f8f5ff 100%);
+}
+
+.hero > *,
+.price-section > *,
+.project-card,
+.price-card,
+.feature-grid article,
+.steps article {
+  min-width: 0;
 }
 
 .hero-content {
@@ -131,8 +141,13 @@ a {
 h1,
 h2,
 h3,
-p {
+p,
+li,
+a,
+.badge,
+.project-content span {
   margin-top: 0;
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -162,6 +177,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
   min-height: 48px;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -355,12 +371,14 @@ h1 {
 
 .badge {
   display: inline-flex;
+  max-width: 100%;
   margin-bottom: 18px;
   border-radius: 999px;
   padding: 8px 12px;
   color: #062033;
   font-size: 0.86rem;
   font-weight: 850;
+  line-height: 1.25;
   background: #a9f5ff;
 }
 
@@ -642,6 +660,46 @@ h1 {
 
   .hero {
     padding-top: 42px;
+  }
+
+  h1 {
+    font-size: 2.15rem;
+    line-height: 1.08;
+  }
+
+  .section h2,
+  .contact-section h2 {
+    font-size: 1.95rem;
+    line-height: 1.12;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
+  .hero-preview {
+    border-radius: 12px;
+  }
+
+  .preview-body {
+    padding: 24px;
+  }
+
+  .preview-body h2 {
+    font-size: 1.9rem;
+    line-height: 1.08;
+  }
+
+  .price-card {
+    padding: 22px;
+  }
+
+  .price-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .price span {
+    font-size: clamp(2.4rem, 13vw, 3.25rem);
   }
 
   .hero-actions,
