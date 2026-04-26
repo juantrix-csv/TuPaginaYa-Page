@@ -326,12 +326,24 @@ h1 {
   color: #c8d5e6;
 }
 
+.plans-grid {
+  display: grid;
+  gap: 18px;
+}
+
 .price-card {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   padding: clamp(22px, 4vw, 34px);
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+.advanced-price-card {
+  border-color: rgba(169, 245, 255, 0.34);
+  background:
+    linear-gradient(135deg, rgba(16, 198, 208, 0.14), rgba(68, 40, 238, 0.12)),
+    rgba(255, 255, 255, 0.08);
 }
 
 .badge {
@@ -343,6 +355,11 @@ h1 {
   font-size: 0.86rem;
   font-weight: 850;
   background: #a9f5ff;
+}
+
+.advanced-badge {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .price {
