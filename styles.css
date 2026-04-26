@@ -433,6 +433,25 @@ h1 {
   object-position: top center;
 }
 
+.project-image {
+  display: grid;
+  place-items: center;
+  min-height: 230px;
+  padding: 22px;
+}
+
+.project-image img {
+  display: block;
+  width: min(100%, 360px);
+  height: auto;
+}
+
+.project-fletes {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.08)),
+    linear-gradient(135deg, #101827 0%, #263747 48%, #10c6d0 100%);
+}
+
 .project-one {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.18)),
