@@ -311,9 +311,9 @@ h1 {
 
 .price-section {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 450px);
+  grid-template-columns: minmax(0, 0.72fr) minmax(560px, 1fr);
   align-items: center;
-  gap: clamp(26px, 6vw, 80px);
+  gap: clamp(26px, 5vw, 64px);
   background: #101827;
   color: #fff;
 }
@@ -328,6 +328,7 @@ h1 {
 
 .plans-grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -570,6 +571,10 @@ h1 {
   .price-section,
   .extras-section,
   .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .plans-grid {
     grid-template-columns: 1fr;
   }
 
