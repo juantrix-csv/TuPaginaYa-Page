@@ -48,8 +48,22 @@
             que vos puedas enfocarte en tu negocio.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contacto">Quiero mi pagina</a>
-            <a class="button secondary" href="#trabajos">Ver trabajos</a>
+            <a
+              class="button primary"
+              href="#contacto"
+              data-track-event="Lead"
+              data-track-label="hero-quiero-mi-pagina"
+            >
+              Quiero mi pagina
+            </a>
+            <a
+              class="button secondary"
+              href="#trabajos"
+              data-track-event="ViewContent"
+              data-track-label="hero-ver-trabajos"
+            >
+              Ver trabajos
+            </a>
           </div>
         </div>
 
@@ -144,7 +158,14 @@
               <li>Direccion web gratuita incluida</li>
               <li>Secciones para contar que vendes, como trabajas y como contactarte</li>
             </ul>
-            <a class="button primary full" href="#contacto">Reservar precio inicial</a>
+            <a
+              class="button primary full"
+              href="#contacto"
+              data-track-event="Lead"
+              data-track-label="plan-presencia-online"
+            >
+              Reservar precio inicial
+            </a>
           </div>
 
           <div class="price-card advanced-price-card">
@@ -162,7 +183,14 @@
               <li>Consultas, pedidos o cobros mejor organizados</li>
               <li>Mas espacio para mostrar servicios, promociones, equipo o trabajos realizados</li>
             </ul>
-            <a class="button secondary full" href="#contacto">Consultar Negocio Digital</a>
+            <a
+              class="button secondary full"
+              href="#contacto"
+              data-track-event="Lead"
+              data-track-label="plan-negocio-digital"
+            >
+              Consultar Negocio Digital
+            </a>
           </div>
         </div>
       </section>
@@ -200,7 +228,13 @@
                 Pagina web para mostrar planes, explicar el proceso, responder
                 dudas frecuentes y recibir consultas por WhatsApp.
               </span>
-              <a href="https://santijuarezfit.netlify.app" target="_blank" rel="noreferrer">
+              <a
+                href="https://santijuarezfit.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+                data-track-event="ViewContent"
+                data-track-label="trabajo-santi-juarez-fit"
+              >
                 Ver pagina publicada
               </a>
             </div>
@@ -216,7 +250,13 @@
                 Pagina web para presentar servicios, precios de referencia,
                 proceso de trabajo y recibir presupuestos por WhatsApp.
               </span>
-              <a href="https://fletesostrit.netlify.app/" target="_blank" rel="noreferrer">
+              <a
+                href="https://fletesostrit.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                data-track-event="ViewContent"
+                data-track-label="trabajo-fletes-ostrit"
+              >
                 Ver pagina publicada
               </a>
             </div>
@@ -227,7 +267,13 @@
               <p>Tu pagina puede estar aca</p>
               <h3>Aca podria estar la tuya</h3>
               <span>Estas a un mensaje de tener tu pagina web propia publicada y lista para recibir consultas.</span>
-              <a href="#contacto">Quiero mi pagina</a>
+              <a
+                href="#contacto"
+                data-track-event="Lead"
+                data-track-label="trabajo-tu-pagina"
+              >
+                Quiero mi pagina
+              </a>
             </div>
           </article>
         </div>
@@ -272,6 +318,8 @@
             href="https://wa.me/5492244468716?text=Hola%20TuPaginaYa%2C%20quiero%20consultar%20por%20una%20pagina%20web"
             target="_blank"
             rel="noreferrer"
+            data-track-event="Contact"
+            data-track-label="whatsapp-contacto"
           >
             Escribir por WhatsApp
           </a>
@@ -284,6 +332,20 @@
       <p>Paginas web y sitios a medida para emprendimientos.</p>
     </footer>
 
+    <script>
+      window.TUPAGINAYA_METRICS = {
+        metaPixelId: "1704703690701794"
+      };
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1704703690701794&ev=PageView&noscript=1"
+        alt=""
+      >
+    </noscript>
     <script src="script.js"></script>
   </body>
 </html>
